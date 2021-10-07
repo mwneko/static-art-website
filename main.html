@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+    <title>Human Supply Company</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu-block">
+            <ul>
+                <li> <a href="#HSP" onclick="change_name1('test1')"> Human Supply Company</i>
+                    </a></li>
+                <li> <a href="#Process" onclick="change_name2('test2')"> Manufacturing<br> No.26 Human Process</a>
+                </li>
+                <li><a href="#Book" onclick="change_name3('test3')"> No.26 Human Manual
+                    </a></li>
+                <li><a href="#Gallery" onclick="change_name4('test4')"> Gallery of No.26 Human</a></li>
+            </ul>
+        </div>
+        <div class="menu-icon">
+            <ul>
+                <li><i id="test1" class="box"></i></li>
+                <li><i id="test2" class="fas"></i></li>
+                <li><i id="test3" class="fas"></i></li>
+                <li><i id="test4" class="fas"></i></li>
+            </ul>
+        </div>
+        <div class="content-block">
+            <embed id="test" src="../book/pages/hsc.html" width=100% height=100% />
+        </div>
+        <div class="menu-title">
+            <p id="name"><br>Human<br>Supply<br>Company</p>
+        </div>
+        <div class="footer-block">
+            <p>Designed By Jingru.C <i class="footer-img">&nbsp;&nbsp;&nbsp;&nbsp;</i></p>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    function change_name1(id) {
+        document.getElementById("name").innerHTML = "<br>Human<br>Supply<br>Company";
+        document.getElementById(id).classList.toggle("box");
+        document.getElementById("test2").className = "fas";
+        document.getElementById("test3").className = "fas";
+        document.getElementById("test4").className = "fas";
+        document.getElementById("test").src = "../book/pages/hsc.html"
+    }
+
+    function change_name2(id) {
+        document.getElementById("name").innerHTML = "<br>Manufacturing<br> No.26 Human";
+        document.getElementById(id).classList.toggle("box");
+        document.getElementById("test1").className = "fas";
+        document.getElementById("test3").className = "fas";
+        document.getElementById("test4").className = "fas";
+        document.getElementById("test").src = "../book/pages/process.html"
+    }
+
+    function change_name3(id) {
+        document.getElementById("name").innerHTML = "<br>No.26<br>Human<br>Manual";
+        document.getElementById(id).classList.toggle("box");
+        document.getElementById("test1").className = "fas";
+        document.getElementById("test2").className = "fas";
+        document.getElementById("test4").className = "fas";
+        document.getElementById("test").src = "../book/pages/book.html"
+    }
+
+    function change_name4(id) {
+        document.getElementById("name").innerHTML = "<br><br>Gallery";
+        document.getElementById(id).classList.toggle("box");
+        document.getElementById("test1").className = "fas";
+        document.getElementById("test2").className = "fas";
+        document.getElementById("test3").className = "fas";
+        document.getElementById("test").src = "../book/pages/gallery.html"
+    }
+</script>
+
+</html>

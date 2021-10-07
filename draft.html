@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <title>Book main page</title>
+</head>
+
+<body>
+    <div id="main" class="main">
+        <div id="sidenav" class="sidenav">
+            <div id="menu" class="menu">
+                <div class="text">
+                    <a href="#HSP" onclick="change_name1('test1')"> Human Supply Company <i id="test1" class="fas"></i>
+                    </a> <br>
+                    <a href="#Process" onclick="change_name2('test2')"> Manufacturing<br> No.26 Human Process test <i
+                            id="test2" class="fas"></i></a><br>
+                    <a href="#Book" onclick="change_name3('test3')"> No.26 Human Manual <i id="test3" class="fas"></i>
+                    </a><br>
+                    <a href="#Gallery" onclick="change_name4('test4')"> Gallery of No.26 Human <i id="test4" class="fas">
+                        </i></a><br>
+                </div>
+            </div>
+            <div id="menu-name" class="menu-name">
+                <p id="name">Human Supply Company</p>
+            </div>
+        </div>
+        <div id="content" class="content">
+            <!-- <p>HSC is a company that is run by artificial intelligence.<br>Provide and Produce high-quality human resources<br>to social media companies.</p>
+            <div>
+                <img class="rightimg" src="/Users/zwz/Desktop/book/css/img/menu.png"></img>
+            </div> -->
+            <embed id="test" src="/Users/zwz/Desktop/book/pages/hsc.html" width=100% height=100% />
+        </div>
+        <footer>
+            <p>Designed By Jingru.C<i>图标</i></p>
+        </footer>
+    </div>
+
+
+</body>
+<script>
+    function change_name1(id) {
+        document.getElementById("name").innerHTML = "Human Supply Company";
+        document.getElementById(id).classList.toggle("box");
+        document.getElementById("test2").className = "fas";
+        document.getElementById("test3").className = "fas";
+        document.getElementById("test4").className = "fas";
+        document.getElementById("test").src = "pages/hsc.html"
+    }
+
+    function change_name2(id) {
+        document.getElementById("name").innerHTML = "Manufacturing<br> No.26 Human Process";
+        document.getElementById(id).classList.toggle("box");
+        document.getElementById("test1").className = "fas";
+        document.getElementById("test3").className = "fas";
+        document.getElementById("test4").className = "fas";
+        document.getElementById("test").src = "pages/process.html"
+    }
+
+    function change_name3(id) {
+        document.getElementById("name").innerHTML = "No.26 Human Manual";
+        document.getElementById(id).classList.toggle("box");
+        document.getElementById("test1").className = "fas";
+        document.getElementById("test2").className = "fas";
+        document.getElementById("test4").className = "fas";
+        document.getElementById("test").src = "pages/book.html"
+    }
+
+    function change_name4(id) {
+        document.getElementById("name").innerHTML = "Gallery of No.26 Human";
+        document.getElementById(id).classList.toggle("box");
+        document.getElementById("test1").className = "fas";
+        document.getElementById("test2").className = "fas";
+        document.getElementById("test3").className = "fas";
+        document.getElementById("test").src = "pages/gallery.html"
+    }
+</script>
+
+</html>
