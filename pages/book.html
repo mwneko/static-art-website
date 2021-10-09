@@ -27,6 +27,28 @@
     margin-right: 50px;
     padding: 0;
 }
+.carousel-control-next1{
+  right:0;
+}
+.carousel-control-prev1{
+  left: 0;
+}
+.carousel-control-next1, .carousel-control-prev1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
 </style>
 <body>
     <div class= "right">
@@ -101,13 +123,19 @@
           <div class="carousel-item">
             <img src="../css/img/book/22.png" class="d-block w-100" alt="...">
           </div>
+          <div class="carousel-item">
+            <img src="../css/img/book/23.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../css/img/book/24.png" class="d-block w-100" alt="...">
+          </div>
         </div>
         <div> 
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <a class="carousel-control-prev1" href="#carouselExampleControls" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only"></span>
               </a>
-              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <a class="carousel-control-next1" href="#carouselExampleControls" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only"></span>
               </a>
